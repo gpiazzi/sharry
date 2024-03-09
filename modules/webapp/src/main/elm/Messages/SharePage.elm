@@ -3,6 +3,7 @@ module Messages.SharePage exposing
     , de
     , gb
     , fr
+    , it
     , ja
     )
 
@@ -141,6 +142,37 @@ fr =
             "Téléversements possibles jusqu'à " ++ size ++ "."
     }
 
+it : Texts
+it =
+    { markdownInput = Messages.MarkdownInput.it
+    , dropzone = Messages.Dropzone2.it
+    , validityField = Messages.ValidityField.it
+    , intField = Messages.IntField.it
+    , sendFiles = "Invia file"
+    , description = "Descrizione"
+    , sendMoreFiles = "Invia altri file"
+    , allFilesUploaded = "Caricati tutti i file"
+    , someFilesFailedHeader = "File mancanti"
+    , someFilesFailedText = "Alcuni file non sono stati caricati…. Prova a caricarli di nuovo. "
+    , someFilesFailedTextAddon = "Vai alla cartella e ricarica lo stesso file."
+    , submit = "OK"
+    , clearFiles = "Annulla file"
+    , resume = "Riprendi"
+    , pause = "Pausa"
+    , password = "Password"
+    , createShare = "Crea una cartella"
+    , details = "Dettagli"
+    , name = "Nome"
+    , namePlaceholder = "Nome (opzionale)"
+    , validity = "Validità"
+    , files = "File"
+    , newShare = "Nuova cartalla"
+    , gotoShare = "Vai alla cartella"
+    , maxPublicViews = "Limite accessi"
+    , uploadsUpTo =
+        \size ->
+            "È possibile caricare fino a " ++ size ++ "."
+    }
 
 ja : Texts
 ja =

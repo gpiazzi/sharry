@@ -3,6 +3,7 @@ module Messages.NewInvitePage exposing
     , de
     , gb
     , fr
+    , it
     , ja
     )
 
@@ -108,6 +109,34 @@ fr =
         ]
     }
 
+it : Texts
+it =
+    { createNewTitle = "Crea nuovi inviti"
+    , newInvitePassword = "Nuova password di invito"
+    , submit = "OK"
+    , reset = "Reset"
+    , error = "Errore"
+    , success = "Successo"
+    , invitationKey = "Codice invito:"
+    , message =
+        [ p []
+            [ text
+                """Sharry richiede un invito per potersi iscrivere.
+             Qui puoi creare inviti e inviarli ai tuoi contatti
+             perché possano iscriversi su Sharry."""
+            ]
+        , p []
+            [ text
+                """Ogni invito può essere usato una volta. Dovrai creare
+             un codice per ogni persona che vorrai invitare."""
+            ]
+        , p []
+            [ text
+                """Per creare un invito occorre presentare la password
+             impostata in installazione."""
+            ]
+        ]
+    }
 
 ja : Texts
 ja =

@@ -3,6 +3,7 @@ module Messages.MailForm exposing
     , de
     , gb
     , fr
+    , it
     , ja
     )
 
@@ -48,6 +49,15 @@ fr =
     , cancel = "Annulation"
     }
 
+it : Texts
+it =
+    { receivers = "Destinatario"
+    , separateRecipientsByComma = "per separare più indirizzi, usare la virgola"
+    , subject = "Titolo"
+    , body = "Messaggio"
+    , send = "Invia"
+    , cancel = "Annulla"
+    }
 
 ja : Texts
 ja =

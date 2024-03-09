@@ -3,6 +3,7 @@ module Messages.SettingsPage exposing
     , de
     , gb
     , fr
+    , it
     , ja
     )
 
@@ -64,6 +65,19 @@ fr =
     , newPasswordRepeat = "Nouveau mot de passe (bis)"
     }
 
+it : Texts
+it =
+    { settingsTitle = "Impostazioni"
+    , changeMailHeader = "Cambia indirizzo e-mail"
+    , newEmail = "Nuovo indirizzo"
+    , newEmailPlaceholder = "Indirizzo e-mail"
+    , submitEmptyMailInfo = "Lasciare in bianco per cancellare l'indirizzo e-mail."
+    , submit = "OK"
+    , changePasswordHeader = "Cambia password"
+    , currentPassword = "Password attuale"
+    , newPassword = "Nuova password"
+    , newPasswordRepeat = "Nuova Password (ripetere)"
+    }
 
 ja : Texts
 ja =

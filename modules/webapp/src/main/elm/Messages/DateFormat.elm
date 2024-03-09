@@ -28,6 +28,9 @@ get lang =
         French ->
             fr
 
+        Italian ->
+            it
+
         Japanese ->
             ja
 
@@ -101,6 +104,25 @@ fr =
         , DateFormat.minuteFixed
         ]
     , lang = french
+    }
+
+
+it : DateTimeMsg
+it =
+    { format =
+        [ DateFormat.dayOfWeekNameAbbreviated
+        , DateFormat.text ". "
+        , DateFormat.dayOfMonthSuffix
+        , DateFormat.text " "
+        , DateFormat.monthNameFull
+        , DateFormat.text " "
+        , DateFormat.yearNumber
+        , DateFormat.text ", "
+        , DateFormat.hourMilitaryNumber
+        , DateFormat.text ":"
+        , DateFormat.minuteFixed
+        ]
+    , lang = italian
     }
 
 
@@ -337,6 +359,133 @@ toGermanWeekdayName weekday =
 
         Sun ->
             "Sonntag"
+
+-- Italian
+
+
+{-| The Italian language!
+-}
+italian : DL.Language
+italian =
+    DL.Language
+        toItalianMonthName
+        toItalianMonthAbbreviation
+        toItalianWeekdayName
+        (toItalianWeekdayName >> String.left 3)
+        toEnglishAmPm
+        toItalianOrdinalSuffix
+
+
+toItalianMonthName : Month -> String
+toItalianMonthName month =
+    case month of
+        Jan ->
+            "gennaio"
+
+        Feb ->
+            "febbraio"
+
+        Mar ->
+            "marzo"
+
+        Apr ->
+            "aprile"
+
+        May ->
+            "maggio"
+
+        Jun ->
+            "giugno"
+
+        Jul ->
+            "luglio"
+
+        Aug ->
+            "agosto"
+
+        Sep ->
+            "settembre"
+
+        Oct ->
+            "ottobre"
+
+        Nov ->
+            "novembre"
+
+        Dec ->
+            "dicembre"
+
+
+toItalianMonthAbbreviation : Month -> String
+toItalianMonthAbbreviation month =
+    case month of
+        Jan ->
+            "gen"
+
+        Feb ->
+            "feb"
+
+        Mar ->
+            "mar"
+
+        Apr ->
+            "apr"
+
+        May ->
+            "mag"
+
+        Jun ->
+            "giu"
+
+        Jul ->
+            "lug"
+
+        Aug ->
+            "ago"
+
+        Sep ->
+            "set"
+
+        Oct ->
+            "ott"
+
+        Nov ->
+            "nov"
+
+        Dec ->
+            "dic"
+
+
+toItalianWeekdayName : Weekday -> String
+toItalianWeekdayName weekday =
+    case weekday of
+        Mon ->
+            "lunedì"
+
+        Tue ->
+            "martedì"
+
+        Wed ->
+            "mercoledì"
+
+        Thu ->
+            "giovedì"
+
+        Fri ->
+            "venerdì"
+
+        Sat ->
+            "sabato"
+
+        Sun ->
+            "domenica"
+
+
+toItalianOrdinalSuffix : Int -> String
+toItalianOrdinalSuffix n =
+        "˚"
+
+
 
 -- Japanese
 {-| The Japanese language!

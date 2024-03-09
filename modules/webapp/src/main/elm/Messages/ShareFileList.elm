@@ -3,6 +3,7 @@ module Messages.ShareFileList exposing
     , de
     , gb
     , fr
+    , it
     , ja
     )
 
@@ -54,6 +55,16 @@ fr =
     , yesNo = Messages.YesNoDimmer.fr
     }
 
+it : Texts
+it =
+    { previewNotSupported = "Anteprima non disponibile"
+    , downloadToDisk = "Scarica"
+    , viewInBrowser = "Visualizza nel browser"
+    , deleteFile = "Elimina il file."
+    , fileIsIncomplete = "Il file è incompleto ("
+    , tryUploadAgain = "%). Prova a caricarlo di nuovo."
+    , yesNo = Messages.YesNoDimmer.it
+    }
 
 ja : Texts
 ja =

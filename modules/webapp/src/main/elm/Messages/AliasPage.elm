@@ -3,6 +3,7 @@ module Messages.AliasPage exposing
     , de
     , fr
     , gb
+    , it
     , ja
     )
 
@@ -91,6 +92,27 @@ fr =
     , aliasForm = Messages.AliasForm.fr
     , aliasTable = Messages.AliasTable.fr
     , mailSend = Messages.MailSend.fr
+    }
+
+
+it : Texts
+it =
+    { createNew = "Crea una nuova pagina Alias"
+    , aliasPage = "Pagina Alias: "
+    , aliasPages = "PagineAlias"
+    , newAliasPage = "Nuova pagina Alias"
+    , searchPlaceholder = "Cerca…"
+    , errorQrCode = "Generazione del QRCode fallita."
+    , shareThisLink = "Condividi questo link"
+    , aliasPageNowAt = "La pagina Alias si trova ora su: "
+    , shareThisUrl = "Puoi ricevere files da altri comunicando loro questo URL."
+    , sendEmail = "Invia e-mail"
+    , copyLink = "Copia link"
+    , owner = "Proprietario"
+    , notOwnerInfo = "Questo Alias appartiene a un altro utente. Non puoi modificarne le proprietà."
+    , aliasForm = Messages.AliasForm.it
+    , aliasTable = Messages.AliasTable.it
+    , mailSend = Messages.MailSend.it
     }
 
 

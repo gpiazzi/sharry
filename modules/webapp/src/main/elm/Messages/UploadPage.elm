@@ -3,6 +3,7 @@ module Messages.UploadPage exposing
     , de
     , gb
     , fr
+    , it
     , ja
     )
 
@@ -42,6 +43,13 @@ fr =
     , shareTable = Messages.ShareTable.fr
     }
 
+it : Texts
+it =
+    { yourShares = "Le tue cartelle"
+    , newShare = "Nuova cartella"
+    , search = "Cerca…"
+    , shareTable = Messages.ShareTable.it
+    }
 
 ja : Texts
 ja =

@@ -3,6 +3,7 @@ module Messages.AccountForm exposing
     , de
     , fr
     , gb
+    , it
     , ja
     )
 
@@ -70,6 +71,22 @@ fr =
     , email = "e-mail"
     , yesNo = Messages.YesNoDimmer.gb
     , dropdown = Messages.FixedDropdown.fr
+    }
+
+
+it : Texts
+it =
+    { id = "Id"
+    , login = "Identificativo"
+    , state = "Stato"
+    , admin = "Admin"
+    , password = "Password"
+    , submit = "OK"
+    , back = "Indietro"
+    , delete = "Elimina"
+    , email = "e-mail"
+    , yesNo = Messages.YesNoDimmer.it
+    , dropdown = Messages.FixedDropdown.it
     }
 
 

@@ -3,6 +3,7 @@ module Messages.IntField exposing
     , de
     , gb
     , fr
+    , it
     , ja
     )
 
@@ -36,6 +37,12 @@ fr =
     , notANumber = \str -> "'" ++ str ++ "' n'est pas un nombre valide !"
     }
 
+it : Texts
+it =
+    { mustBeLower = "Il numero deve essere <= "
+    , mustBeGreater = "Il numero deve essere >= "
+    , notANumber = \str -> "'" ++ str ++ "' non è un numero valido!"
+    }
 
 ja : Texts
 ja =

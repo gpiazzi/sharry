@@ -1,8 +1,9 @@
 module Messages.AliasForm exposing
     ( Texts
     , de
-    , fr
     , gb
+    , fr
+    , it
     , ja
     )
 
@@ -107,6 +108,33 @@ fr =
     , memberInfo = gb.memberInfo
     , yesNo = Messages.YesNoDimmer.fr
     , validityField = Messages.ValidityField.fr
+    }
+
+
+it : Texts
+it =
+    { id = "Id"
+    , noteToIdsHead = "Che cosa sono gli ID"
+    , noteToIds =
+        p []
+            [ text "Questo ID fa parte della URL dove "
+            , em [] [ text "tutti" ]
+            , text " possono caricare files. Si consiglia l'uso di"
+            , text " una sequenza casuale. L'ID può assumere "
+            , text "qualsiasi valore, ma se viene lasciato in bianco "
+            , text "ne verrà generato automaticamente uno casuale."
+            ]
+    , name = "Nome"
+    , validity = "Validità"
+    , enabled = "Attivo"
+    , submit = "OK"
+    , back = "Indietro"
+    , delete = "Elimina"
+    , searchPlaceholder = "Cerca…"
+    , members = "Membri"
+    , memberInfo = "I membri del tuo alias possono accedere all'alias, possono condividerlo e possono accedere a tutti i file caricati attraverso l'alias."
+    , yesNo = Messages.YesNoDimmer.it
+    , validityField = Messages.ValidityField.it
     }
 
 

@@ -3,6 +3,7 @@ module Messages.App exposing
     , de
     , fr
     , gb
+    , it
     , ja
     )
 
@@ -71,6 +72,23 @@ fr =
     , lightDark = gb.lightDark
     , logoutSharry = "Déconnexion de Sharry"
     , logoutOAuth = "Déconnexion de votre fournisseur d'authentification"
+    }
+
+
+it : Texts
+it =
+    { home = "Home"
+    , shares = "Cartelle"
+    , aliases = "Alias"
+    , accounts = "Utenze"
+    , settings = "Impostazioni"
+    , newInvites = "Inviti"
+    , logout = \user -> "Uscita (" ++ user ++ ")"
+    , login = "Accesso"
+    , register = "Iscrizione"
+    , lightDark = "Chiaro/Scuro"
+    , logoutSharry = "Uscita da Sharry"
+    , logoutOAuth = "Uscita dal servizio di autenticazione"
     }
 
 

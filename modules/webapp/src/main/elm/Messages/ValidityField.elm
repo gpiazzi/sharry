@@ -3,6 +3,7 @@ module Messages.ValidityField exposing
     , de
     , gb
     , fr
+    , it
     , ja
     )
 
@@ -62,6 +63,18 @@ fr =
     , months = "mois"
     }
 
+it : Texts
+it =
+    { dropdown = Messages.FixedDropdown.it
+    , hour = "ora"
+    , hours = "ore"
+    , day = "giorno"
+    , days = "giorni"
+    , week = "settimana"
+    , weeks = "settimane"
+    , month = "mese"
+    , months = "mesi"
+    }
 
 ja : Texts
 ja =

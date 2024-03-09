@@ -3,6 +3,7 @@ module Messages.MailSend exposing
     , de
     , gb
     , fr
+    , it
     , ja
     )
 
@@ -38,6 +39,12 @@ fr =
     , mailForm = Messages.MailForm.fr
     }
 
+it : Texts
+it =
+    { sendingEmail = "Invio mail..."
+    , loadingTemplate = "Caricamento maschera..."
+    , mailForm = Messages.MailForm.it
+    }
 
 ja : Texts
 ja =

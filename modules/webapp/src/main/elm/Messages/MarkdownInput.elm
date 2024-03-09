@@ -3,6 +3,7 @@ module Messages.MarkdownInput exposing
     , de
     , gb
     , fr
+    , it
     , ja
     )
 
@@ -38,6 +39,14 @@ fr =
     , preview = "Prévisualiser"
     , split = "Vue séparée"
     , supportsMarkdown = "Supporte le Markdown"
+    }
+
+it : Texts
+it =
+    { edit = "Modfica"
+    , preview = "Anteprima"
+    , split = "Dividi"
+    , supportsMarkdown = "Puoi usare Markdown"
     }
 
 ja : Texts

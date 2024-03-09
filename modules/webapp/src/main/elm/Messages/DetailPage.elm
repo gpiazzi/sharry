@@ -3,6 +3,7 @@ module Messages.DetailPage exposing
     , de
     , fr
     , gb
+    , it
     , ja
     )
 
@@ -312,6 +313,84 @@ fr =
                     "Preview"
     , initialViewField = "Initial view"
     }
+
+it : Texts
+it =
+    { mailSend = Messages.MailSend.it
+    , save = "Salva"
+    , cancel = "Annulla"
+    , yourShare = "La tua cartella"
+    , markdownInput = Messages.MarkdownInput.it
+    , shareFileList = Messages.ShareFileList.it
+    , yesNo = Messages.YesNoDimmer.it
+    , sharePublished =
+        "La cartella è stata pubblicata, ma è stato raggiunto il numero limite di accessi. "
+            ++ "Se vuoi che rimanga accessibile, puoi aumentare il limite."
+    , shareNotPublished =
+        "Per condividere con altri questa cartella, la devi pubblicare. "
+            ++ "Dopodiché tutti coloro a cui invierai l'apposito link "
+            ++ "potranno accedere alla cartella."
+    , shareLinkExpired =
+        "La cartella è stata pubblicata, ma ora è scaduta. "
+            ++ "Puoi ritirarla e poi pubblicarla di nuovo."
+    , errorQrCode = "Generazione del QRCode fallita."
+    , sharePublicAvailableAt = "La cartella è accessibile all'indirizzo"
+    , shareAsYouLike = "Comunica questo link a chi vuoi che possa accedere"
+    , sendEmail = "Invia e-mail"
+    , copyLink = "Copia Link"
+    , name = "Nome"
+    , validity = "Tempo di validità"
+    , maxViews = "Limite accessi"
+    , password = "Password"
+    , passwordProtected = "Sotto password"
+    , passwordNone = "Nessuna"
+    , shareSize = "#/Volume"
+    , created = "Creata"
+    , aliasLabel = "Alias"
+    , publishedOn = "Pubblicata il"
+    , publishedUntil = "Pubblicata fino al"
+    , lastAccess = "Ultimo accesso"
+    , views = "Accessi"
+    , publishWithNewLink = "Pubblica con un nuovo link"
+    , delete = "Elimina"
+    , edit = "Modifica"
+    , detailsMenu = "Dettagli"
+    , shareLinkMenu = "Condividi il link"
+    , addFilesLinkMenu = "Aggiungi file"
+    , editDescription = "Modifica descrizione"
+    , publish = "Pubblica"
+    , unpublish = "Ritira"
+    , listView = "Elenco"
+    , cardView = "Schede"
+    , submit = "OK"
+    , clear = "reset"
+    , resume = "Riprendi"
+    , pause = "Pausa"
+    , uploadsGreaterThan =
+        \size ->
+            "Tutti gli upload non possono superare " ++ size ++ "."
+    , waitDeleteShare = "Eliminazione cartella, prego attendere."
+    , loadingData = "Caricamento..."
+    , dropzone = Messages.Dropzone2.it
+    , validityField = Messages.ValidityField.it
+    , passwordRequired = "Password richiesta"
+    , passwordInvalid = "Password non valida"
+    , or = "O"
+    , dateTime = Messages.DateFormat.formatDateTime Language.Italian
+    , initialViewLabel =
+        \iv ->
+            case iv of
+                Data.InitialView.Listing ->
+                    "Elenco"
+
+                Data.InitialView.Cards ->
+                    "Schede"
+
+                Data.InitialView.Zoom ->
+                    "Anteprima"
+    , initialViewField = "Visualizzazione iniziale"
+    }
+
 
 ja : Texts
 ja =

@@ -3,6 +3,7 @@ module Messages.HomePage exposing
     , de
     , fr
     , gb
+    , it
     , ja
     )
 
@@ -47,6 +48,16 @@ fr =
     , viewAliases = "Pages d'Alias"
     , documentation = "Documentation"
     , shareFilesWithOthers = "Partager des fichiers"
+    }
+
+it : Texts
+it =
+    { createShare = "Crea cartella"
+    , viewShares = "Cartelle"
+    , createAlias = "Cre Alias"
+    , viewAliases = "Alias"
+    , documentation = "Documentazione"
+    , shareFilesWithOthers = "Condividi i tuoi file"
     }
 
 ja : Texts

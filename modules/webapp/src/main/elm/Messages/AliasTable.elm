@@ -66,6 +66,20 @@ fr =
     }
 
 
+it : Texts
+it =
+    { name = "Nome"
+    , enabled = "Attivo"
+    , validity = "Validità"
+    , created = "Creato"
+    , edit = "Modifica"
+    , show = "Mostra"
+    , owner = "Proprietario"
+    , validityField = Messages.ValidityField.it
+    , dateTime = Messages.DateFormat.formatDateTime Language.Italian
+    }
+
+
 ja : Texts
 ja =
     { name = "受信箱名"

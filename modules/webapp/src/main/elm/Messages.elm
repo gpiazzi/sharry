@@ -53,6 +53,9 @@ get lang =
         French ->
             fr
 
+        Italian ->
+            it
+
         Japanese ->
             ja
 
@@ -162,6 +165,26 @@ fr =
     , upload = Messages.UploadPage.fr
     , newInvite = Messages.NewInvitePage.fr
     , settings = Messages.SettingsPage.fr
+    }
+
+
+it : Messages
+it =
+    { lang = Italian
+    , iso2 = "it"
+    , label = "Italiano"
+    , flagIcon = "fi fi-it"
+    , app = Messages.App.it
+    , login = Messages.LoginPage.it
+    , register = Messages.RegisterPage.it
+    , account = Messages.AccountPage.it
+    , aliasPage = Messages.AliasPage.it
+    , detail = Messages.DetailPage.it
+    , share = Messages.SharePage.it
+    , home = Messages.HomePage.it
+    , upload = Messages.UploadPage.it
+    , newInvite = Messages.NewInvitePage.it
+    , settings = Messages.SettingsPage.it
     }
 
 

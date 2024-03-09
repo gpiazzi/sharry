@@ -3,6 +3,7 @@ module Messages.RegisterPage exposing
     , de
     , gb
     , fr
+    , it
     , ja
     )
 
@@ -66,6 +67,19 @@ fr =
     , dropdown = Messages.FixedDropdown.fr
     }
 
+it : Texts
+it =
+    { signup = "Registrazione"
+    , userLogin = "Nome utente"
+    , password = "Password"
+    , passwordRepeat = "Password (ripetere)"
+    , invitationKey = "Codice invito"
+    , submitButton = "OK"
+    , alreadySignedUp = "Già iscritto?"
+    , signin = "Accedi"
+    , registrationSuccessful = "Iscrizione eseguita."
+    , dropdown = Messages.FixedDropdown.it
+    }
 
 ja : Texts
 ja =

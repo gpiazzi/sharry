@@ -3,6 +3,7 @@ module Messages.ShareTable exposing
     , de
     , fr
     , gb
+    , it
     , ja
     )
 
@@ -64,6 +65,18 @@ fr =
     , dateTime = Messages.DateFormat.formatDateTime Language.French
     }
 
+it : Texts
+it =
+    { nameId = "Nome/Id"
+    , aliasLabel = "Alias"
+    , maxViews = "Limite accessi"
+    , published = "Pubblicata"
+    , nFiles = "#File"
+    , size = "Misura"
+    , created = "Creata"
+    , open = "Apri"
+    , dateTime = Messages.DateFormat.formatDateTime Language.Italian
+    }
 
 ja : Texts
 ja =

@@ -3,6 +3,7 @@ module Messages.AccountTable exposing
     , de
     , fr
     , gb
+    , it
     , ja
     )
 
@@ -70,6 +71,21 @@ fr =
     , created = "Créé"
     , edit = "Éditer"
     , dateTime = formatDateTime Language.French
+    }
+
+
+it : Texts
+it =
+    { login = "Accesso"
+    , source = "Origine"
+    , state = "Stato"
+    , nrShares = "#Cartelle"
+    , admin = "Admin"
+    , nrLogins = "#Accessi"
+    , lastLogin = "Ultimo accesso"
+    , created = "Creato"
+    , edit = "Modifica"
+    , dateTime = formatDateTime Language.Italian
     }
 
 

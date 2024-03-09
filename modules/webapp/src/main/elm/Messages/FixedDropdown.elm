@@ -3,6 +3,7 @@ module Messages.FixedDropdown exposing
     , de
     , gb
     , fr
+    , it
     , ja
     )
 
@@ -26,6 +27,11 @@ de =
 fr : Texts
 fr =
     { select = "Selectionner…"
+    }
+
+it : Texts
+it =
+    { select = "Seleziona…"
     }
 
 ja : Texts

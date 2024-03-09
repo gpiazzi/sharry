@@ -3,6 +3,7 @@ module Messages.LoginPage exposing
     , de
     , gb
     , fr
+    , it
     , ja
     )
 
@@ -68,6 +69,21 @@ fr =
     , signupLink = "S'inscrire"
     , or = "Ou"
     , dropdown = Messages.FixedDropdown.fr
+    }
+
+it : Texts
+it =
+    { username = "Nome utente"
+    , password = "Password"
+    , loginPlaceholder = "Nome"
+    , passwordPlaceholder = "Password"
+    , loginButton = "Accesso"
+    , via = "via"
+    , loginSuccessful = "Accesso riuscito"
+    , noAccount = "Non hai un'utenza?"
+    , signupLink = "Iscriviti!"
+    , or = "Oppure"
+    , dropdown = Messages.FixedDropdown.it
     }
 
 ja : Texts

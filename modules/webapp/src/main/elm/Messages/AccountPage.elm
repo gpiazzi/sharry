@@ -3,6 +3,7 @@ module Messages.AccountPage exposing
     , de
     , gb
     , fr
+    , it
     , ja
     )
 
@@ -49,6 +50,17 @@ fr =
     , newAccount = "Nouveau compte"
     , accountForm = Messages.AccountForm.fr
     , accountTable = Messages.AccountTable.fr
+    }
+
+
+it : Texts
+it =
+    { createAccountTitle = "Creare una nuova utenza interna"
+    , accounts = "Utenze"
+    , searchPlaceholder = "Cerca…"
+    , newAccount = "Nuova utenza"
+    , accountForm = Messages.AccountForm.it
+    , accountTable = Messages.AccountTable.it
     }
 
 
