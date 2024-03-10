@@ -2,6 +2,7 @@ module Messages.AliasTable exposing
     ( Texts
     , de
     , fr
+    , it
     , gb
     , ja
     )
